@@ -170,6 +170,42 @@
         </div>
         <p class="nome-video"><strong>Sonia</strong> - Saltos Del Guaira, Canindeyu</p>
       </div>
+    </div>
+  </section> 
+
+  <section class="dudaban">
+    <p class="titulo-dudaban">
+      Especialistas lo recomiendan para personas con la edad de 30 a 90 años más con problemas crónicos
+    </p>
+  </section>
+
+  <!-- Seção Médicos Recomiendan -->
+  <section class="secao-medicos">
+    <div class="medicos-grid">
+
+      <!-- Vídeo Vertical - Dr. Lázaro -->
+      <div class="video-wrapper-medico vertical">
+        <video class="video-shorts" poster="imagens/Lazaro.png" preload="metadata" playsinline>
+          <source src="videos/DrLazaro.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-play">
+          <img src="imagens/play.svg" alt="Play">
+          <span>REPRODUCIR AHORA</span>
+        </div>
+        <p class="nome-video"><strong>Dr. Lázaro</strong> - Saltos Del Guaira, Canindeyu</p>
+      </div>
+
+      <!-- Vídeo Horizontal - Dr. Yordani -->
+      <div class="video-wrapper-medico horizontal">
+        <video class="video-horizontal" poster="imagens/Yordani.png" preload="metadata" playsinline>
+          <source src="videos/DrYordaniGrass.mp4" type="video/mp4">
+        </video>
+        <div class="overlay-play">
+          <img src="imagens/play.svg" alt="Play">
+          <span>REPRODUCIR AHORA</span>
+        </div>
+        <p class="nome-video"><strong>Dr. Yordani Grass</strong> - Brasil</p>
+      </div>
 
     </div>
   </section>
@@ -178,44 +214,32 @@
 
 
 
+<script>
+  document.querySelectorAll('.video-wrapper, .video-wrapper-medico').forEach(wrapper => {
+    const video = wrapper.querySelector('video');
+    const overlay = wrapper.querySelector('.overlay-play');
 
+    overlay.style.display = 'flex';
 
-
-
-
-
-
-
-
-
-
-
-  
-  <script>
-    document.querySelectorAll('.video-wrapper').forEach(wrapper => {
-      const video = wrapper.querySelector('video');
-      const overlay = wrapper.querySelector('.overlay-play');
-
-      overlay.style.display = 'flex';
-
-      wrapper.addEventListener('click', () => {
-        if (video.paused) {
-          video.play();
-          overlay.style.display = 'none';
-        } else {
-          video.pause();
-          overlay.style.display = 'flex';
-        }
-      });
-
-      video.addEventListener('pause', () => {
-        overlay.style.display = 'flex';
-      });
-
-      video.addEventListener('play', () => {
+    wrapper.addEventListener('click', () => {
+      if (video.paused) {
+        video.play();
         overlay.style.display = 'none';
-      });
+      } else {
+        video.pause();
+        overlay.style.display = 'flex';
+      }
     });
-  </script>
+
+    video.addEventListener('pause', () => {
+      overlay.style.display = 'flex';
+    });
+
+    video.addEventListener('play', () => {
+      overlay.style.display = 'none';
+    });
+  });
+</script>
+
 </body>
 </html>

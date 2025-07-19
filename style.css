@@ -416,6 +416,97 @@ h1 {
   font-weight: bold;
 }
 
+.secao-medicos {
+  background-color: #fffdd3;
+  padding: 40px 0;
+}
+
+.medicos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  padding: 0 20px; /* Espaço igual nas laterais para todos os vídeos */
+  box-sizing: border-box;
+}
+
+
+.video-wrapper-medico {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* Vídeo vertical (padrão) */
+.video-wrapper-medico.vertical {
+  width: 280px;
+}
+
+/* Vídeo horizontal */
+.video-wrapper-medico.horizontal {
+  width: 100%;
+  max-width: 320px;
+  /* Remova o margin aqui */
+}
+
+
+
+.video-wrapper-medico video {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+
+/* Estilo igual ao anterior */
+.overlay-play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 50px);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.overlay-play img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.overlay-play span {
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Texto */
+.nome-video {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 1.05em;
+  color: #111;
+  font-weight: normal;
+  border-radius: 0 0 16px 16px;
+}
+
+.nome-video strong {
+  font-weight: bold;
+}
+
 
 
 /* Responsivo para desktop */
