@@ -23,44 +23,73 @@ body {
   text-align: left;
 }
 
-.hero {
-  background: linear-gradient(to top, #0e7303, #eaffea);
-  padding: 40px 0;
+.hero-nova {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 0;
 }
 
-.logo {
-  max-width: 100px;
-  margin-bottom: -25px;
+.hero-topo {
+  background-color: #e60000;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 1.7em;
-  margin-bottom: 25px;
+.hero-topo h2 {
+  color: white;
+  font-size: 1.3em;
   font-weight: bold;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.hero-imagem img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -15px;
+  margin-bottom: -20px;
+}
+
+.hero-titulo h1 {
+  color: #2a6629;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 20px;
+  margin: 0;
+  line-height: 1.4;
+  text-transform: uppercase;
 }
 
 .beneficios {
   list-style: none;
   margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+  padding: 10px 25px;
 }
 
 .beneficios li {
-  margin-bottom: 14px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #005212;
-  font-size: 1.05em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #085f00;
+  font-size: 1em;
+  text-align: left;
 }
 
 .botao {
   display: block;
-  width: 100%;
+  width: 90%;
+  max-width: 400px;
   background-color: #e60000;
   color: white;
-  padding: 15px 0;
+  padding: 18px 0;
   text-align: center;
+  font-size: 1.1em;
   font-weight: bold;
-  border-radius: 8px;
-  margin: 0 auto 30px auto;
+  border-radius: 12px;
+  margin: 20px auto 30px auto;
   transition: background 0.3s;
   text-decoration: none;
 }
@@ -69,16 +98,6 @@ h1 {
   background-color: #b80000;
 }
 
-.imagem {
-  text-align: center;
-}
-
-.imagem img {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  margin-top: -70px;
-}
 .titulo-vermelho {
   background-color: #e60000;
   color: white;
@@ -447,11 +466,8 @@ h1 {
 .video-wrapper-medico.horizontal {
   width: 100%;
   max-width: 320
-  px;
   /* Remova o margin aqui */
 }
-
-
 
 .video-wrapper-medico video {
   width: 100%;
@@ -508,6 +524,30 @@ h1 {
   font-weight: bold;
 }
 
+.promocao-relampago {
+  background-color: #e60000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.promocao-relampago h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.precos-promocionais {
+  background-color: #fffded;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container-precos img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /* Responsivo para desktop */
