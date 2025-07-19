@@ -446,7 +446,8 @@ h1 {
 /* Vídeo horizontal */
 .video-wrapper-medico.horizontal {
   width: 100%;
-  max-width: 320px;
+  max-width: 320
+  px;
   /* Remova o margin aqui */
 }
 
